@@ -1,0 +1,24 @@
+:root {
+  --clr-primary-100: hsl(158, 36%, 37%);
+  --clr-secondary-200: hsl30, 38%, 92%;
+
+  --clr-neutral-100: 212, 21%, 14%;
+  --clr-neutral-200: 228, 12%, 48%;
+  --clr-neutral-300: 0, 0%, 100%;
+
+  --ff-accent: 'Fraunces', serif;
+  --ff-base: 'Montserrat', sans-serif;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
