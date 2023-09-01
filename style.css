@@ -1,10 +1,10 @@
 :root {
   --clr-primary-100: hsl(158, 36%, 37%);
-  --clr-secondary-200: hsl30, 38%, 92%;
+  --clr-secondary-200: hsl(30, 38%, 92%);
 
-  --clr-neutral-100: 212, 21%, 14%;
-  --clr-neutral-200: 228, 12%, 48%;
-  --clr-neutral-300: 0, 0%, 100%;
+  --clr-neutral-100: hsl(212, 21%, 14%);
+  --clr-neutral-200: hsl(228, 12%, 48%);
+  --clr-neutral-300: hsl(0, 0%, 100%);
 
   --ff-accent: 'Fraunces', serif;
   --ff-base: 'Montserrat', sans-serif;
@@ -21,4 +21,108 @@
 
 * {
   margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+.visuallyHidden {
+  visibility: hidden;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 0.75rem;
+  color: var(--clr-neutral-200);
+  background-color: var(--clr-secondary-200);
+
+  display: grid;
+  place-items: center;
+}
+
+.product {
+  display: grid;
+  background-color: var(--clr-neutral-300);
+  max-width: 600px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.productContent {
+  display: grid;
+  padding: 2rem;
+}
+
+.productContent p {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.productCatagory {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.productTitle {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+  font-size: 2rem;
+}
+
+.flexGroup {
+  display: flex;
+  align-items: center;
+}
+
+.currentPrice {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-100);
+  font-size: 2rem;
+}
+
+.originalPrice {
+  text-decoration: line-through;
 }
