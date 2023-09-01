@@ -120,7 +120,7 @@ body {
 
 .productCatagory {
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.3em;
 }
 
 .productTitle {
@@ -132,7 +132,6 @@ body {
 
 .currentPrice {
   font-family: var(--ff-accent);
-  /* font-weight: var(--fw-bold); */
   color: var(--clr-primary-100);
   font-size: 2rem;
 }
@@ -151,10 +150,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  font-weight: var(--ff-base);
 }
 
 .button:hover,
-.button:focus-visible {
+.button:focus {
   background-color: var(--clr-hover);
 }
 
