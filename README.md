@@ -1,2 +1,4 @@
 # CSSPractice
-doing frontend practice using FrontendMentor, FrontendPractice, and iCodeThis. I am not sure if I should save them individually. 
+FrontEnd Mentor - Product preview card component
+
+https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
